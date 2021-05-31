@@ -99,6 +99,11 @@
 		9738787E2665522000BC0C45 /* Uber */ = {
 			isa = PBXGroup;
 			children = (
+				973878B32665526400BC0C45 /* Utils */,
+				973878B22665525E00BC0C45 /* Service */,
+				973878B12665525200BC0C45 /* Controller */,
+				973878B02665524900BC0C45 /* View */,
+				973878AF2665524200BC0C45 /* Model */,
 				9738787F2665522000BC0C45 /* AppDelegate.swift */,
 				973878812665522000BC0C45 /* SceneDelegate.swift */,
 				973878832665522000BC0C45 /* ViewController.swift */,
@@ -126,6 +131,41 @@
 				973878A32665522A00BC0C45 /* Info.plist */,
 			);
 			path = UberUITests;
+			sourceTree = "<group>";
+		};
+		973878AF2665524200BC0C45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		973878B02665524900BC0C45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		973878B12665525200BC0C45 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		973878B22665525E00BC0C45 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		973878B32665526400BC0C45 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
