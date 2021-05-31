@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		973878802665522000BC0C45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9738787F2665522000BC0C45 /* AppDelegate.swift */; };
-		973878842665522000BC0C45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973878832665522000BC0C45 /* ViewController.swift */; };
 		973878892665522900BC0C45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973878882665522900BC0C45 /* Assets.xcassets */; };
 		9738788C2665522900BC0C45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9738788A2665522900BC0C45 /* LaunchScreen.storyboard */; };
 		973878972665522900BC0C45 /* UberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973878962665522900BC0C45 /* UberTests.swift */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		9738787C2665522000BC0C45 /* Uber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9738787F2665522000BC0C45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		973878832665522000BC0C45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		973878882665522900BC0C45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9738788B2665522900BC0C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9738788D2665522900BC0C45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 				973878B02665524900BC0C45 /* View */,
 				973878AF2665524200BC0C45 /* Model */,
 				9738787F2665522000BC0C45 /* AppDelegate.swift */,
-				973878832665522000BC0C45 /* ViewController.swift */,
 				973878882665522900BC0C45 /* Assets.xcassets */,
 				9738788A2665522900BC0C45 /* LaunchScreen.storyboard */,
 				9738788D2665522900BC0C45 /* Info.plist */,
@@ -295,7 +292,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				973878B52665586F00BC0C45 /* LoginViewController.swift in Sources */,
-				973878842665522000BC0C45 /* ViewController.swift in Sources */,
 				973878802665522000BC0C45 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
