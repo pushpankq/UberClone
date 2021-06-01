@@ -21,11 +21,13 @@ class LoginViewController: UIViewController {
     
     private lazy var emailContainerView: UIView = {
         let view = UIView()
-        return view.inputContainerView(image: #imageLiteral(resourceName: "ic_mail_outline_white_2x"), textField: emailTextField)        
+        view.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        return view.inputContainerView(image: #imageLiteral(resourceName: "ic_mail_outline_white_2x"), textField: emailTextField)
     }()
     
     private lazy var passwordContainerView: UIView = {
         let view = UIView()
+        view.heightAnchor.constraint(equalToConstant: 50).isActive = true
         return view.inputContainerView(image: #imageLiteral(resourceName: "ic_lock_outline_white_2x"), textField: passwordTextField)
         
     }()
@@ -50,11 +52,13 @@ class LoginViewController: UIViewController {
         titleLabel.anchor(top: view.safeAreaLayoutGuide.topAnchor)
         titleLabel.centerX(inView: view)
         
-        view.addSubview(emailContainerView)
-        emailContainerView.anchor(top: titleLabel.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 40, paddingLeft: 16, paddingRight: 16, height: 50)
+        let stackView = UIStackView(arrangedSubviews: [emailContainerView, passwordContainerView])
+        stackView.axis = .vertical
+        stackView.distribution = .fillEqually
+        stackView.spacing = 16
+        view.addSubview(stackView)
         
-        view.addSubview(passwordContainerView)
-        passwordContainerView.anchor(top: emailContainerView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16, paddingLeft: 16, paddingRight: 16, height: 50)
+        stackView.anchor(top: titleLabel.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 40, paddingLeft: 16, paddingRight: 16)
 
     }
     
