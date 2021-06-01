@@ -15,6 +15,7 @@
 		973878B52665586F00BC0C45 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973878B42665586F00BC0C45 /* LoginViewController.swift */; };
 		973878B7266562E600BC0C45 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973878B6266562E600BC0C45 /* UIView+Constraints.swift */; };
 		973878B92665FBB300BC0C45 /* UITextField+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973878B82665FBB300BC0C45 /* UITextField+Helper.swift */; };
+		973878BB2665FFC000BC0C45 /* UIView+InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973878BA2665FFC000BC0C45 /* UIView+InputContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		973878B42665586F00BC0C45 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		973878B6266562E600BC0C45 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		973878B82665FBB300BC0C45 /* UITextField+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Helper.swift"; sourceTree = "<group>"; };
+		973878BA2665FFC000BC0C45 /* UIView+InputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+InputContainerView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			children = (
 				973878B6266562E600BC0C45 /* UIView+Constraints.swift */,
 				973878B82665FBB300BC0C45 /* UITextField+Helper.swift */,
+				973878BA2665FFC000BC0C45 /* UIView+InputContainerView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				973878B7266562E600BC0C45 /* UIView+Constraints.swift in Sources */,
 				973878B92665FBB300BC0C45 /* UITextField+Helper.swift in Sources */,
 				973878B52665586F00BC0C45 /* LoginViewController.swift in Sources */,
+				973878BB2665FFC000BC0C45 /* UIView+InputContainerView.swift in Sources */,
 				973878802665522000BC0C45 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

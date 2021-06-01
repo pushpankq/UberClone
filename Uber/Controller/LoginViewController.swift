@@ -21,52 +21,17 @@ class LoginViewController: UIViewController {
     
     private lazy var emailContainerView: UIView = {
         let view = UIView()
-        
-        let imageView = UIImageView()
-        imageView.image = #imageLiteral(resourceName: "ic_mail_outline_white_2x")
-        imageView.alpha = 0.87
-        view.addSubview(imageView)
-        
-        imageView.centerY(inView: view)
-        imageView.anchor(left: view.leftAnchor, paddingLeft: 8, width: 24, height: 24)
-        
-        view.addSubview(emailTextField)
-        emailTextField.centerY(inView: view)
-        emailTextField.anchor(left: imageView.rightAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingLeft: 8, paddingBottom: 8)
-        
-        let seperatorView = UIView()
-        seperatorView.backgroundColor = .lightGray
-        view.addSubview(seperatorView)
-        seperatorView.anchor(left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingLeft: 8, height: 0.75)
-        return view
+        return view.inputContainerView(image: #imageLiteral(resourceName: "ic_mail_outline_white_2x"), textField: emailTextField)        
+    }()
+    
+    private lazy var passwordContainerView: UIView = {
+        let view = UIView()
+        return view.inputContainerView(image: #imageLiteral(resourceName: "ic_lock_outline_white_2x"), textField: passwordTextField)
         
     }()
     
     private let emailTextField: UITextField = {
        return UITextField().textField(withPlaceholder: "Email")
-    }()
-    
-    private lazy var passwordContainerView: UIView = {
-        let view = UIView()
-        
-        let imageView = UIImageView()
-        imageView.image = #imageLiteral(resourceName: "ic_lock_outline_white_2x")
-        imageView.alpha = 0.87
-        view.addSubview(imageView)
-        
-        imageView.centerY(inView: view)
-        imageView.anchor(left: view.leftAnchor, paddingLeft: 8, width: 24, height: 24)
-        
-        view.addSubview(passwordTextField)
-        passwordTextField.centerY(inView: view)
-        passwordTextField.anchor(left: imageView.rightAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingLeft: 8, paddingBottom: 8)
-        
-        let seperatorView = UIView()
-        seperatorView.backgroundColor = .lightGray
-        view.addSubview(seperatorView)
-        seperatorView.anchor(left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingLeft: 8, height: 0.75)
-        return view
-        
     }()
     
     private let passwordTextField: UITextField = {
