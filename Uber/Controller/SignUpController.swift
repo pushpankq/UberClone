@@ -147,7 +147,11 @@ class SignUpController: UIViewController {
             "accountType": accountTypeIndex] as [String: Any]
             
             Database.database().reference().child("users").child(uid).updateChildValues(values) { (error, ref) in
-                print("successfully created user and store data ")
+               
+                guard let controller = keyWindow?.rootViewController as? HomeViewController else { return }
+                controller.configureVIew()
+                
+                self.dismiss(animated: true)
             }
         }
     }

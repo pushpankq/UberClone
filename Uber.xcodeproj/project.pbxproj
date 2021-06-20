@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0CFC2619267E8A2B00874AB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CFC2618267E8A2B00874AB4 /* GoogleService-Info.plist */; };
+		0CFC261B267F66FC00874AB4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC261A267F66FC00874AB4 /* HomeViewController.swift */; };
+		0CFC261D267FB08E00874AB4 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC261C267FB08E00874AB4 /* AppConstant.swift */; };
 		110DCC8D9C0F651B0CA9222D /* Pods_Uber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A747C5A92E11BBBC0CE6CBC7 /* Pods_Uber.framework */; };
 		62CDF9D1D2EA4B6BB0826BAD /* Pods_UberTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506D2469494A52AA70E41FFF /* Pods_UberTests.framework */; };
 		973878802665522000BC0C45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9738787F2665522000BC0C45 /* AppDelegate.swift */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		020102DC125829B1293A5303 /* Pods_Uber_UberUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uber_UberUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CFC2618267E8A2B00874AB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0CFC261A267F66FC00874AB4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0CFC261C267FB08E00874AB4 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		506D2469494A52AA70E41FFF /* Pods_UberTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UberTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		603CCB52F875420FEF3B1E65 /* Pods-Uber-UberUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber-UberUITests.release.xcconfig"; path = "Target Support Files/Pods-Uber-UberUITests/Pods-Uber-UberUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7BC6AAE4862C3EA7D1BEF65C /* Pods-Uber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber.debug.xcconfig"; path = "Target Support Files/Pods-Uber/Pods-Uber.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +115,6 @@
 				D9D4392A40D99B1A460646E5 /* Pods-UberTests.debug.xcconfig */,
 				D1DB3C5BF895F713ED48EE8E /* Pods-UberTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -192,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				973878B42665586F00BC0C45 /* LoginViewController.swift */,
+				0CFC261A267F66FC00874AB4 /* HomeViewController.swift */,
 				973878BE266621C900BC0C45 /* SignUpController.swift */,
 			);
 			path = Controller;
@@ -204,6 +208,7 @@
 				973878B82665FBB300BC0C45 /* UITextField+Helper.swift */,
 				973878BA2665FFC000BC0C45 /* UIView+InputContainerView.swift */,
 				973878BC266607DE00BC0C45 /* UIColor+Helper.swift */,
+				0CFC261C267FB08E00874AB4 /* AppConstant.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -447,10 +452,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				973878B7266562E600BC0C45 /* UIView+Constraints.swift in Sources */,
+				0CFC261D267FB08E00874AB4 /* AppConstant.swift in Sources */,
 				973878C1266642D300BC0C45 /* AuthButton.swift in Sources */,
 				973878B92665FBB300BC0C45 /* UITextField+Helper.swift in Sources */,
 				973878BF266621C900BC0C45 /* SignUpController.swift in Sources */,
 				973878B52665586F00BC0C45 /* LoginViewController.swift in Sources */,
+				0CFC261B267F66FC00874AB4 /* HomeViewController.swift in Sources */,
 				973878BB2665FFC000BC0C45 /* UIView+InputContainerView.swift in Sources */,
 				973878802665522000BC0C45 /* AppDelegate.swift in Sources */,
 				973878BD266607DE00BC0C45 /* UIColor+Helper.swift in Sources */,
