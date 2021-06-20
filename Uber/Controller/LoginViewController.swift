@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
     
@@ -43,6 +44,7 @@ class LoginViewController: UIViewController {
     private let loginButton: AuthButton = {
         let button = AuthButton(type: .system)
         button.setTitle("Log In", for: .normal)
+        button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
         return button
     }()
     
@@ -103,5 +105,21 @@ class LoginViewController: UIViewController {
         navigationController?.navigationBar.barStyle = .black
         
     }
+    
+    @objc func handleLogin() {
+        
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            if let error = error {
+                debugPrint("error is ", error)
+                return
+            }
+            
+            debugPrint("success fully logged in")
+        }
+    }
+
 }
 
