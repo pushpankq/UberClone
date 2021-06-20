@@ -117,7 +117,9 @@ class LoginViewController: UIViewController {
                 return
             }
             
-            debugPrint("success fully logged in")
+            guard let controller = keyWindow?.rootViewController as? HomeViewController else { return }
+            controller.configureVIew()
+            self.dismiss(animated: true)
         }
     }
 
