@@ -29,8 +29,14 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController {
     func configureVIew() {
+        configureMapView()
+    }
+    
+    private func configureMapView() {
         view.addSubview(mapView)
         mapView.frame = view.frame
+        mapView.showsUserLocation = true
+        mapView.userTrackingMode = .follow
     }
     
 }
@@ -39,7 +45,6 @@ private extension HomeViewController {
      func checkIfUserIsLoggedIn() {
         
         let uid = Auth.auth().currentUser?.uid
-        print("uid ", uid)
         if  uid == nil {
             let loginViewController = UINavigationController(rootViewController: LoginViewController())
             loginViewController.modalPresentationStyle = .fullScreen
