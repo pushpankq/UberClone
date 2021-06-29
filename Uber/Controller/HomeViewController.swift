@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     
     let mapView = MKMapView()
     private let locationManager = CLLocationManager()
+    private let inputActivationView = LocationInputActivationView()
     
     
     override func viewDidLoad() {
@@ -30,6 +31,13 @@ class HomeViewController: UIViewController {
 extension HomeViewController {
     func configureVIew() {
         configureMapView()
+        
+        
+        view.addSubview(inputActivationView)
+        inputActivationView.centerX(inView: view)
+        inputActivationView.setDimensions(height: 50, width: view.frame.width - 64)
+        inputActivationView.anchor(top: view.safeAreaLayoutGuide.topAnchor, paddingTop: 32)
+        
     }
     
     private func configureMapView() {

@@ -66,6 +66,8 @@ class LoginViewController: UIViewController {
         
         configureUI()
         
+        var actions = [Int]()
+        
     }
     
     @objc func handleShowSignUp() {
