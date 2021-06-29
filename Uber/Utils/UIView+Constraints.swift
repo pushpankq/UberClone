@@ -62,4 +62,9 @@ extension UIView {
             anchor(left: left, paddingLeft: paddingLeft)
         }
     }
+    
+    func setDimensions(height: CGFloat, width: CGFloat) {
+        heightAnchor.constraint(equalToConstant: height).isActive = true
+        widthAnchor.constraint(equalToConstant: width).isActive = true
+    }
 }
